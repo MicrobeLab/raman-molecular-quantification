@@ -38,7 +38,10 @@ cd raman-molecular-quantification
 
 ### `prepare_reference.py`
 
-Builds a reference spectral matrix from individual compound files. `reference_library` contains ready-to-use spectra (converted to integrated area) for each compound. `compound_list.txt` is a text file with compound names (one per line). `ref_spec.txt` is a tab-separated table where each column represents one compound (in the order specified in `compound_list.txt`).
+Builds a reference spectral matrix from individual compound files. 
+- `reference_library` contains ready-to-use spectra (converted to integrated area) for each compound.
+- `compound_list.txt` is a text file with compound names (one per line).
+- `ref_spec.txt` is a tab-separated table where each column represents one compound (in the order specified in `compound_list.txt`).
 
 #### Usage
 
@@ -50,7 +53,12 @@ python prepare_reference.py --input-dir reference_library  --ref-list compound_l
 
 ### `spectral_fitting.py`
 
-Performs NNLS fitting. `cell_spectrum.txt` is the path to spectra (converted to integrated area) from cells or other mixtures. `ref_spec.txt` is the path to reference matrix from Step 1. `compound_list.txt` is a text file with compound names (same as Step 1). `quantification.txt` is the output file for quantification coefficients (fitting weights). `residuals.txt` is the output file for residual analysis.
+Performs NNLS fitting. 
+- `cell_spectrum.txt` is the path to spectra (converted to integrated area) from cells or other mixtures.
+- `ref_spec.txt` is the path to reference matrix from Step 1.
+- `compound_list.txt` is a text file with compound names (same as Step 1).
+- `quantification.txt` is the output file for quantification coefficients (fitting weights).
+- `residuals.txt` is the output file for residual analysis.
 
 #### Usage
 
