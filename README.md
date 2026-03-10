@@ -65,6 +65,8 @@ Wavenumber ranges should be consistent across all reference and input spectra.
 ## Example
 
 An example dataset is provided in the `example` directory, demonstrating quantitative analysis of Raman spectra for *Bacillus licheniformis* cells under three conditions: control, citrate-treated, and spores.
+- `example/input`: Integrated area values of Raman spectra (input for quantification).  
+- `example/output`: Fitting weights (quantitative results from spectral fitting).
 
 ## Other Resources
 The workflow for Raman spectral pre-processing is available [here](https://github.com/MicrobeLab/scCulturePrec-data).
