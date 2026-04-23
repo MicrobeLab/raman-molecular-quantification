@@ -76,6 +76,11 @@ An example dataset is provided in the `example` directory, demonstrating quantit
 - `example/input`: Integrated area values of Raman spectra (input for quantification).  
 - `example/output`: Fitting weights (quantification results from spectral fitting).
 
+In addition, three supplementary directories contain the spectral data at different processing stages:
+- `example/raw`: Raw (unprocessed) Raman intensity.
+- `example/processed`: Pre-processed Raman intensity (after cosmic ray removal, denoising, baseline correction, and normalization).
+- `example/interpolated`: Interpolated Raman intensity.
+
 ## Other Resources
 The workflow for Raman spectral pre-processing is available [here](https://github.com/MicrobeLab/scCulturePrec-data).
 Bugs and difficulties in using the toolkit are welcome on [the issue tracker](https://github.com/MicrobeLab/raman-molecular-quantification/issues).
