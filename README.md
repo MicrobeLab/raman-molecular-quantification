@@ -79,7 +79,13 @@ An example dataset is provided in the `example` directory, demonstrating quantit
 In addition, three supplementary directories contain the spectral data at different processing stages:
 - `example/raw`: Raw (unprocessed) Raman intensity.
 - `example/processed`: Pre-processed Raman intensity (after cosmic ray removal, denoising, baseline correction, and normalization).
-- `example/interpolated`: Interpolated Raman intensity.
+- `example/interpolated`: Interpolated Raman intensity (interpolation for resolution from 2 cm⁻¹ to 1 cm⁻¹).
+
+For ICC (intraclass correlation coefficient) analysis, ten individual cells were randomly selected and Raman spectra were acquired five times per cell. These single-cell Raman spectra are provided in the `example/ICC_analysis` directory:
+- `example/ICC_analysis/raw`: Raw (unprocessed) Raman spectra.
+- `example/ICC_analysis/processed`: Pre-processed Raman spectra.
+- `example/ICC_analysis/interpolated`: Interpolated Raman spectra.
+- `example/ICC_analysis/integrated_area`: Integrated area values of Raman spectra (input for quantification).
 
 ## Other Resources
 The workflow for Raman spectral pre-processing is available [here](https://github.com/MicrobeLab/scCulturePrec-data).
